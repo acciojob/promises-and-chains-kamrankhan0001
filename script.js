@@ -38,7 +38,7 @@
     event.preventDefault();
 
     if (!ageInput.value || !nameInput.value) {
-      alert('Please fill out all fields');
+      alert('Please enter valid details');
       return;
     }
 
