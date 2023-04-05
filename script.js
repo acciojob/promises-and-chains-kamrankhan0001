@@ -12,6 +12,8 @@ var btnElement= documents.querySelector("#btn");
 		if(!(age && name)){
 			alert("please enter a valid details");
 		}
+			return;
+			if(age>18){
           resolve(`Welcome, ${name}. You can vote.`);
         }, 4000);
       } else {
