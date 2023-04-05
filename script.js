@@ -12,18 +12,17 @@ var promise = new Promise(resolve,reject)=>{
 		}
 		return;
 		 const promise = new Promise((resolve, reject) => {
-      if (ageInput.value >= 18) {
+      
         setTimeout(() => {
-          resolve(`Welcome, ${nameInput.value}. You can vote.`);
+          resolve(`Welcome, ${name}. You can vote.`);
         }, 4000);
       } else {
-        reject(`Oh sorry ${nameInput.value}. You aren't old enough.`);
+        reject(`Oh sorry ${name}. You aren't old enough.`);
       }
     });
 
-    promise
-      .then((message) => alert(message))
-      .catch((error) => alert(error));
-  });
+    function callPromise(){
+		return promise;
+	}
 	
 }
