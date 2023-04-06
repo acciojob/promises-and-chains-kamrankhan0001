@@ -2,6 +2,8 @@
 var ageElement= documents.querySelector("#age");
 var nameElement= documents.querySelector("#name");
 var btnElement= documents.querySelector("#btn");
+var age=ageElement.value;
+		var name=nameElement.value;
 
 if(!(age && name)){
 		alert("please enter a valid details");
@@ -11,8 +13,7 @@ if(!(age && name)){
 		 const promise = new Promise((resolve, reject) => {
       
         setTimeout(() => {
-			var age=ageElement.value;
-		var name=nameElement.value;
+			
 // 		
 			if(age>18){
           resolve(`Welcome, ${name}. You can vote.`);
